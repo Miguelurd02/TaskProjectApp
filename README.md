@@ -1,62 +1,43 @@
-Task Management App - Backend & Frontend
-This project consists of a Task Management application with a backend service and a frontend React application.
+# Project Name
 
-Project Structure
-backend/: Node.js backend service
+This repository contains two main services:
+- **Backend** (folder: `backend`)
+- **Frontend** (folder: `task-app`)
 
-task-app/: React frontend application
+## Backend
 
-Prerequisites
-Node.js (v14 or higher recommended)
+The backend service is implemented in TypeScript and requires the following commands to run:
 
-npm (included with Node.js)
-
-For frontend: Expo CLI (install with npm install -g expo-cli)
-
-Setup Instructions
-Backend Service
-Navigate to the backend directory:
-
-bash
+### Installation
 cd backend
-Install dependencies:
-
-bash
 npm install
-Environment Setup:
+### Available Scripts
 
-Create a .env file based on .env.example
+- `npm run dev` — Runs the backend in development mode with automatic restarts.
+- `npm test` — Runs the backend test suite using Jest.
+- `npm run build` — Compiles the TypeScript source code.
+- `npm run cypress` — Opens Cypress for end-to-end testing. (Make sure to have the correct TypeScript config as per `tsconfig.cypress.json`)
 
-Fill in the required environment variables
-
-Available scripts:
-
-Start development server:
-
-bash
+### Starting Backend
 npm run dev
-Run tests:
 
-bash
-npm run test
-Build project:
+## Frontend
 
-bash
-npm run build
-Open Cypress for E2E testing:
+The frontend service is located in the `task-app` folder and uses Expo.
 
-bash
-npm run cypress
-Frontend Application
-Navigate to the frontend directory:
-
-bash
-cd ../task-app
-Install dependencies:
-
-bash
+### Installation
+cd task-app
 npm install
-Start the development server:
 
-bash
-npm run web
+### Starting Frontend
+This command will start the frontend application in your web browser.
+
+## Requirements
+
+- Node.js and npm installed on your machine.
+- Recommended to use an IDE such as VSCode.
+
+## Notes
+
+Make sure to install dependencies separately in both `backend` and `task-app` folders. Then, you can run both services concurrently in your development environment.
+
