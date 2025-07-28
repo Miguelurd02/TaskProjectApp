@@ -1,4 +1,4 @@
-# Project Name
+# Task Manager
 
 This repository contains two main services:
 - **Backend** (folder: `backend`)
